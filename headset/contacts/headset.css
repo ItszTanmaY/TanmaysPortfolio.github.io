@@ -1,0 +1,101 @@
+body {
+    background-image: url(headset.png);
+    background-size: 1385px 720px;
+}
+
+.header nav img{
+    height: 60px;
+    margin-right: 30px;
+}
+
+.header nav {
+    display: flex;
+    padding: 0% 0%;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+    
+   }
+
+   .header ul{
+    font-family: "chivo mono ", monospace;
+    display: flex;
+    gap: 40px;  
+}
+.header ul li {
+    list-style: none;  
+
+}
+.header ul li a {
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(165, 4, 141);
+    padding: 10px;
+    transition: 0.5s    ease;
+}
+.header ul:hover li a {
+    color: #610279;
+
+}
+.header ul:hover li a:not(:hover){
+    color: white;
+    opacity: 0.3;
+    filter: blur(1px);
+}
+
+.front h1{
+    color: rgb(184, 5, 181);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 80px;
+    margin-top: 200px;
+    font-size: 40px;
+
+}
+
+.front p {
+    color: rgb(110, 64, 123);
+    margin-left: 80px;
+}
+
+.front button{
+    background-color: rgb(34, 11, 37);
+    margin-left: 80px;
+    margin-top: 20px;
+    border-radius: 8px;
+    border: 1px solid rgb(166, 5, 181);
+    padding: 5px;
+    color: rgb(163, 10, 194);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 0px 1px 10px 1px rgb(162, 10, 192);
+}
+
+
+.social-media{
+    
+    margin-left: 20px;
+    margin-top: 80px;
+
+  }
+  
+  
+  .social-media ul li{
+    display: inline-block;
+    cursor: pointer;
+    margin: 25px 15px;
+    
+  }
+
+  .social-media ul{
+    gap: 0px;
+  }
+  
+  .social-media img{
+    width: 20px;
+    height: 20px;
+    box-shadow: 0px 1px 6px 1px rgb(162, 10, 192);
+
+}
+    
+  

@@ -1,0 +1,64 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<title> Geolocation API </title>
+</head>
+<body>
+<h2> Find Your Location in below map </h2>
+<button onclick="getlocation"> Show Position </button>
+<div id="demo" style="width:600px ; height:400px; margine-left:200px;"> </div>
+
+<script src="https://maps:google.com/maps/api/js?sensor=false"> </script>
+
+<script type="text/javascript">
+function getlocation{
+if(nevigator.geolocation){
+navigator.getlocation.getCurrentPosition(showPas.ShowErr);
+}
+
+else{
+alert("Sorry your Browser does not support Geolocation API")
+}
+
+}
+
+//showing Current Position on Google MAp 
+function show Pas(position){
+latt = position coords latitude;
+long = position coords latitude;
+var lattlong = new google.maps.latlong(latt,long);
+var myOption = {
+center :lattlong;
+zoom:15;
+mapTypeCantrol:true;
+navgationControlOption: (style=google.mapsNavigationControlStyleMall)
+}
+
+var maps = new google.mapsMap(document.getElementByid("demo"),myOption);
+
+var markers = 
+new google.mapMarker{(postionlattlong.map:maps,title: "You are here!")}
+
+} 
+
+//Handling Error and Rejection 
+function show(error){
+    switch(error,code){
+        case error.Permission_DENED:
+            alert("User denied the requst for Geolocation API");
+            break 
+            case error:position_unavailabe:
+                alert("The requst to get user location timed out ");
+                break;
+                case error.Timeout:
+                    alert("The requst to get user location timed out");
+                    break;
+                    case error.unknown_error:
+                        alert("an unknown error occured");
+                        break 
+
+    }
+}
+</script>
+</body>
+</html>
