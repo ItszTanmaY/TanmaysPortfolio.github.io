@@ -1,0 +1,184 @@
+
+body {
+    background-image: url("wallpaperflare.com_wallpaper\ \(1\).jpg");
+    background-color: #101010;
+    background-repeat: no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+    
+   }
+
+   nav {
+    display: flex;
+    padding: 0% 0%;
+    justify-content: space-between;
+    align-items: center;
+    
+   }
+
+ul{
+    font-family: "chivo mono ", monospace;
+    display: flex;
+    gap: 40px;  
+}
+ul li {
+    list-style: none;  
+
+}
+ul li a {
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 10px;
+    transition: 0.5s    ease;
+}
+ul:hover li a {
+    color: #f48230;
+
+}
+ul:hover li a:not(:hover){
+    color: white;
+    opacity: 0.3;
+    filter: blur(1px);
+}
+
+
+   .heading {
+    margin-top: 360px;
+
+   }
+   h1 { 
+    margin-top: 200px;
+    margin-left: 70px;
+    letter-spacing: 1px;
+    color: #dddddd;
+   }
+
+   span {
+    color: #c76523;
+   }
+
+   p{
+    color: #c76611;
+    margin-left: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    
+   }
+   table {
+    border: 2px solid rgb(191, 191, 191);
+    margin-left: 70px;
+    color: #c76523;
+    box-shadow: 1px 1px 15px 5px #1d1d1d;
+   }
+
+   #about h1{
+    margin-top: 300px; 
+    text-align: center;
+    
+   }
+
+   .sir {
+    display: flex;
+   }
+
+   .sir img{
+    margin-top: 100px;
+    margin-left: 100px;
+    height: 300px;
+    width: min-content;
+
+   }
+
+   .sir span{
+    color: #b5b5b5;
+   }
+
+   .sir p {
+    margin-top: 200px;
+    margin-left: 150px;
+   }
+
+ 
+
+
+.NEW {
+    margin-top: 300px;
+    min-height: 400px;
+    
+}
+   .NEW h1 {
+    color: #dddddd;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+   }
+
+   .NEW table {
+    margin-top: 100px;
+    padding: 2%;
+    border: 1px solid #dddddd;
+    border-radius: 45px;
+    float: left;
+    margin-left: 120px;
+    color: #b5b5b5;
+    background-color: #525252;
+    text-transform: uppercase;
+
+   }
+
+   table.photo {
+    padding: 0;
+    margin-left: 150px;
+    float: left;
+    box-shadow: rgba(255, 255, 255, 0.45) 0px 1px 1px, rgba(255, 255, 255, 0.45) 0px 2px 2px, rgba(0, 0, 0, 0.45) 0px 4px 4px, rgba(0, 0, 0, 0.45) 0px 8px 8px, rgba(0, 0, 0, 0.45) 0px 16px 16px;
+    
+   }
+
+   .head img { 
+    height: 300px;
+    margin-left: 200px;
+    
+    
+   }
+
+   .head table {
+   margin-left: 200px;
+   }
+   
+   .head{
+    margin-top: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #121212;
+    font-size: 25px;
+
+    
+   }
+   .head h2 {
+    margin-left: 580px;
+    color: #dddddd;
+
+   }
+
+   .head p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+
+   }
+
+   .add p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 100px;
+
+   }
+
+   .location img {
+    height: 500px;
+    margin-left: 100px;
+    margin-top: 50px;
+
+   }
+
+
+   
