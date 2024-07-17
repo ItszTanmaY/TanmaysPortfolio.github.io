@@ -1,0 +1,575 @@
+
+   body{
+
+    min-height: 100vh;
+    background: rgb(28,14,65);
+background: radial-gradient(circle, rgb(14, 7, 34) 10%, rgb(15, 7, 27) 48%, rgb(3, 0, 10) 100%);
+   }
+
+   nav{
+    display: block;
+    z-index: 1;
+    top: 0;
+    position: fixed;
+    margin: -8px;
+    width: 100%;
+    height: 75px;
+    background-color: #1b062e;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+   }
+
+   nav .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 90%;
+    background-color: #1b062e;
+    margin: auto;
+   }
+
+   nav .navbar .logo h1{
+    color: #e4d9ff;
+    font-size: 27px;
+    font-weight: 600;
+    text-decoration: none;
+    text-shadow: 0px 0px 6px #9a5cff;
+
+   }
+
+   nav .navbar .menu{
+    display: flex;
+   }
+
+   .navbar .menu li{
+    list-style: none;
+    margin: 0 15px;
+   }
+
+   .navbar .menu li a{
+    color: #e4d9ff;
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+   }
+
+   .button a{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #e4d9ff;
+    background-color: #2980b9;
+    padding: 7px 12px ;
+    font-size: 18px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.15);
+   }
+       /* Search */
+   .group {
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+
+  }
+  
+  .input {
+    margin-left: 80px;
+    width: 1250px;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    border: none;
+    box-shadow: 0px 1px 3px 0px #e4d9ff;
+    border-radius: 10px;
+    background-color: #1b062e;
+    color: #252525;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: 0.5s;
+  }
+  
+  .input::placeholder {
+    color: #e4d9ff;
+  }
+  .input:focus,
+  input:hover {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #e4d9ff;
+    outline: none;
+    border-bottom:2px solid #9a5cff;
+    background-color: #1b062e;
+    box-shadow: 0px 1px 5px 0px #9a5cff;
+  }
+
+  /* lists*/
+
+  .lists {
+    display: block;
+    position: fixed;
+ background-color:  rgb(3, 0, 10);
+ width: 100%;
+    
+  }
+  .lists ul{
+    margin-top: 70px;
+    display: flex;
+    color: #e4d9ff; 
+    list-style: none; 
+    display: table;
+  }
+
+  .lists li{
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    list-style: none ;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-left: 40px;
+  }
+
+  .lists li:hover{
+    text-decoration: underline;
+  }
+  .lists li { 
+    display: inline-block;
+    position: relative; 
+    padding: 15px 0;
+  }
+  .lists a {
+    color: #e4d9ff;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+  }
+  .lists a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    background: #9a5cff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .lists a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+
+  .front{
+    display: flex;
+  }
+  
+       /* side box */
+
+  .left-box{
+    margin: 10px;
+    margin-top: 160px;
+    background-color: #11041d;
+    min-height: 83.5vh;
+    width: 260px;
+    border: 2px solid #2e1149;
+    border-radius: 5px;
+    float: left;
+  position: fixed;
+  
+  }
+
+  .home{
+    display: flex;
+  }
+.home img{
+  margin: 20px;
+  height: 25px;
+}
+.home h1{
+  margin-top: 23px;
+  margin-left: -5px;
+  color: #e4d9ff;
+  font-size: 20px;
+  font-family: "Chakra Petch", sans-serif;
+  
+}
+
+     /*My Library*/
+
+
+.myLibrary{
+  margin: 20px;
+}
+.myLibrary h1{
+  margin-top: 30px;
+  color: #9a5cff;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-family: "Anta", sans-serif;
+  
+  
+}
+.myLibrary ul{
+  color: #e4d9ff;
+  list-style: none;
+  margin-top: 30px;
+  margin-left: -40px;
+ 
+}  
+.myLibrary li{
+  color: #e4d9ff;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-family: "Quintessential", serif;
+    font-family: "Sriracha", cursive;
+  font-weight: 500;
+  margin-top: 8px;
+  transition: 0.3s;
+ }
+ .myLibrary li:hover{
+ color: #9a5cff;
+ transform: translateX(8px);
+ }
+
+   /* Button */
+
+
+.myLibrary button{
+  margin-top: 20px;
+    background-color: #11041d;
+    border: 1px solid #e4d9ff;
+    position: relative;
+    width: 70%;
+    height: 40px;
+    transition: 0.5s;
+    font-size: 17px;
+    border-radius: 0.4em;
+  }
+  
+  .myLibrary button p {
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 10px;
+    transition: .5s;
+    color: #e4d9ff;
+    font-weight: 700;
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  .myLibrary button img{
+    margin-top: 2px;
+    margin-left: 90px;
+    opacity: 0;
+    transition: 0.4s;
+  }
+  
+  .myLibrary button:hover img {
+    left: 0.5em;
+    color: #fff;
+    opacity: 1;
+  }
+  
+  .myLibrary button:hover {
+    color: #9a5cff;
+    background-color: #220c36;
+    box-shadow: 0px 0px 8px 0px #9a5cff;
+  }
+  
+
+      /*SLIDE nd ALL IMG */
+
+.box2{
+  margin-left:280px;
+  margin-top: 160px;
+  background: rgb(11,7,23);
+  background: linear-gradient(18deg, rgba(11,7,23,1) 12%, rgb(25, 13, 46) 48%, rgba(11,8,19,1) 100%);
+  width: 100%;
+  border: 2px solid #2e1149;
+  border-radius: 5px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar Styles */
+.box2::-webkit-scrollbar {
+ width: 10px;
+ scroll-behavior: smooth;
+}
+
+.box2::-webkit-scrollbar-track {
+  background:  #1b062e; 
+  border-radius: 5px; 
+}
+
+.box2::-webkit-scrollbar-thumb {
+  background: #220c36; 
+  border-radius: 5px; 
+}
+
+.box2::-webkit-scrollbar-thumb:hover {
+  background: #2e1149;
+  border-radius: 10px;
+}
+
+
+.slide{
+  height: 400px;
+  width: 100%;
+  border: 1px solid #220c36;
+}
+
+
+/*img slider */
+
+.wrapper{
+  display: flex;
+  max-width: 1300px;
+  position: relative;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+.wrapper i{
+  top: 50%;
+  height: 44px;
+  width: 44px;
+  color: #343F4F;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
+  text-align: center;
+  line-height: 44px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.9);
+}
+.wrapper i:hover{
+  background: #f2f2f2;
+}
+.wrapper i:first-child{
+  left: -22px;
+  display: none;
+}
+.wrapper i:last-child{
+  right: -22px;
+}
+.wrapper .carousel{
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+.carousel.dragging{
+  cursor: grab;
+  scroll-behavior: auto;
+}
+.carousel.dragging img{
+  pointer-events: none;
+}
+.carousel img{
+  height: 340px;
+  object-fit: cover;
+  user-select: none;
+  margin-left: 14px;
+  width: calc(100% / 3);
+}
+.carousel img:first-child{
+  margin-left: 0px;
+}
+
+@media screen and (max-width: 900px) {
+  .carousel img{
+    width: calc(100% / 2);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .carousel img{
+    width: 100%;
+  }
+}
+
+.songs{
+  height: 500px;
+  width: 100%;
+  border: 1px solid #220c36;
+}
+
+
+    /* Trending Section */
+
+    .Trending{
+      margin: 10px;
+      padding: 20px;
+
+    }
+    
+    .Trending h1{
+      margin-top: 0px;
+      margin-left: 15px;
+      color: #e4d9ff;
+      font-size: 23px;
+      font-family: "Anta", sans-serif;
+      
+    }
+
+    .Trending p{
+      margin:20px;
+      text-align: left;
+      color: #e4d9ff;
+      font-size: 18px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .Trending table img{
+      margin-top: 20px;
+      height: 240px;
+      margin-left: 15px;
+      border: 1px solid #9a5cff;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px 0px #9a5cff;
+      transition: 0.4s;
+    }
+    .Trending table img:hover{
+      transform: translatey(-8px);
+      box-shadow: -0px 5px 8px -0px #9a5cff;
+      cursor: pointer;
+    }
+
+
+    /* TOP chart Section */
+
+    .Top{
+      margin: 10px;
+      padding: 20px;
+
+    }
+    
+    .Top h1{
+
+      margin-top: 0px;
+      margin-left: 15px;
+      color: #e4d9ff;
+      font-size: 23px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .Top table img{
+      height: 240px;
+      margin-left: 15px;
+      border: 1px solid #9a5cff;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px 0px #9a5cff;
+      transition: 0.4s;
+    }
+    .Top table img:hover{
+      transform: translatey(-8px);
+      box-shadow: -0px 5px 8px -0px #9a5cff;
+      cursor: pointer;
+    }
+
+    /* TOP Artists */
+
+    .Artist{
+      margin: 10px;
+      padding: 20px;
+
+    }
+    
+    .Artist h1{
+
+      margin-top: 0px;
+      margin-left: 15px;
+      color: #e4d9ff;
+      font-size: 23px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .Artist table img{
+      height: 240px;
+      margin-left: 15px;
+      border: 1px solid #9a5cff;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px 0px #9a5cff;
+      transition: 0.4s;
+    }
+    .Artist table img:hover{
+      transform: translatey(-8px);
+      box-shadow: -0px 5px 8px -0px #9a5cff;
+      cursor: pointer;
+    }
+
+
+    /* TOP Playlist*/
+
+    .Playlist{
+      margin: 10px;
+      padding: 20px;
+
+    }
+    
+    .Playlist h1{
+
+      margin-top: 0px;
+      margin-left: 15px;
+      color: #e4d9ff;
+      font-size: 23px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .Playlist table img{
+      height: 240px;
+      margin-left: 15px;
+      border: 1px solid #9a5cff;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px 0px #9a5cff;
+      transition: 0.4s;
+    }
+    .Playlist table img:hover{
+      transform: translatey(-8px);
+      box-shadow: -0px 5px 8px -0px #9a5cff;
+      cursor: pointer;
+    }
+
+
+
+    /* TOP Podcast*/
+
+    .Podcast{
+      margin: 10px;
+      padding: 20px;
+
+    }
+    
+    .Podcast h1{
+      margin-top: 0px;
+      margin-left: 15px;
+      color: #e4d9ff;
+      font-size: 23px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .Podcast table img{
+      height: 240px;
+      margin-left: 15px;
+      border: 1px solid #9a5cff;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px 0px #9a5cff;
+      transition: 0.4s;
+    }
+    .Podcast table img:hover{
+      transform: translatey(-8px);
+      box-shadow: -0px 5px 10px -0px #9a5cff;
+      cursor: pointer;
+    }
+
+ 

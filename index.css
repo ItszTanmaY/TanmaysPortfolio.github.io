@@ -278,17 +278,17 @@ margin-left: 50px;
   font-size: 15px;
   color: #fff;
   box-shadow: 1px 1px 8px 1px #5a0166;
+
 }
 #Projects .tab1 table:hover{
-  box-shadow: 0px 0px 8px 0px #5a0166;
-  transform: translateY(-10px);
+  box-shadow: 0px 4px 10px 0px #5a0166;
+  transform: translateY(-5px);
   background-color: #6d32b5;
   background-size: 370px 250px;
   color: #fff;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 20px;
   font-weight: 800;
-  border: 1px solid #5a0166;
 
 }
 #table1 {
@@ -296,7 +296,7 @@ margin-left: 50px;
   background-size: 370px 250px;
 }
 #table2 {
-  background: url(car.jpg);
+  background: url(shop.jpg);
   background-size: 370px 250px;
 }
 #table3 {
@@ -326,14 +326,13 @@ margin-left: 50px;
   box-shadow: 1px 1px 8px 1px #5a0166;
 }
 #Projects .tab2 table:hover{
-  box-shadow: 0px 0px 8px 0px #5a0166;
-  transform: translateY(-10px);
+  box-shadow: 0px 4px 10px 0px #5a0166;
+  transform: translateY(-5px);
   background-color: #6d32b5;
   background-size: 370px 250px;
   color: #fff;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 20px;
-  border: 1px solid #5a0166;
 }
 #table5 {
   background: url(MCommunity.png);
@@ -344,7 +343,7 @@ margin-left: 50px;
   background-size: 370px 250px;
 }
 #table7 {
-  background: url(wp1818001-interstellar-wallpapers.jpg);
+  background: url(spotify.webp);
   background-size: 370px 250px;
 }
 #table8 {

@@ -1,0 +1,383 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #EDF4FF;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #041d2e;
+    background: rgb(1,6,24);
+    background: linear-gradient(58deg, rgb(1, 16, 31) 0%, rgb(1, 32, 53) 52%);
+    padding: 10px 20px;
+    color: white;
+    position: relative;
+    font-family: "Kanit", sans-serif;
+    
+  }
+  
+  .nav-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .nav-name {
+    font-size: 26px;
+  }
+  
+  .nav-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-right a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .nav-right a:hover {
+    background-color: #ebf9ff;
+    color: #111;
+  }
+  
+  .search-container {
+    position: relative;
+    margin-left: 20px;
+  }
+  
+  #search-bar {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    padding-left: 10px;
+  }
+  
+  .autocomplete-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    z-index: 99;
+    background-color: white;
+    display: none; /* Initially hide the dropdown */
+    box-sizing: border-box;
+  }
+  
+  .autocomplete-items li {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .autocomplete-items li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: 100%;
+  }
+  
+  .autocomplete-items li:hover {
+    background-color: #007bff;
+  }
+  
+  .autocomplete-items li:hover a {
+    color: white;
+  }
+  
+  .sign-up-btn {
+    color: white;
+    border-radius: 20px;
+    padding: 6px 20px;
+    margin-left: 20px;
+  background-color: #041d2e;
+  }
+  
+  .sign-up-btn:hover {
+    background-color: #041d2e;
+    border-bottom: 1px solid #97c0f5;
+  }
+  
+  .nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .nav-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.3s;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-right {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+    }
+  
+    .nav-right a,
+    .search-container,
+    .sign-up-btn {
+        padding: 10px;
+        text-align: center;
+    }
+  
+    .search-container {
+        margin-left: 0;
+    }
+  
+    .nav-toggle {
+        display: flex;
+    }
+  
+    .nav-right.show {
+        display: flex;
+    }
+  }
+  
+  .contact{
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .box{
+    min-height: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 46%;
+    margin: auto;
+    padding: 40px;
+}
+
+
+.contact h1{
+    color: #043d5e;
+    font-size: 38px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 1px 1px 3px #13a4b8;
+    text-align: center;
+    margin: 0px;
+}
+
+.contact-one{
+  box-shadow: 0px 0px 4px 0px #041d2e;
+  padding: 8px;
+  width: 200px;
+}
+
+.contact img{
+height: 40px;
+padding: 3px;
+margin-left: 80px;
+
+}
+
+.contact h3{
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    margin: 0px;
+    text-align: center;
+}
+
+.contact p{
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    margin-top:10px;
+}
+
+.contact-bottom {
+    display: flex;
+    margin: 20px 20px;
+}
+
+.contact-left img{
+    display: block;
+}
+
+.contact-bottom ul{
+    list-style: none;
+    margin: 20px 0px;
+   
+}
+
+.contact-bottom img{
+    height: 26px;
+    margin: 16px 0px;
+}
+
+.contact-bottom p{
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    margin: -5px 0px;
+}
+
+.contact-right p{
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin:16px 10px;
+}
+
+.content {
+  display: flex;
+}
+
+.con-map{
+  margin: 10px 10px;
+}
+
+.con-map img{
+  border: 2px solid #041d2e;
+  height: 450px;
+  width: 800px;
+  margin-left: 30px;
+}
+
+.con-map ul{
+  list-style: none;
+  display: flex;
+  margin: 15px 0px;
+  
+}
+
+.con-map ul li img{
+  height: 24px;
+  width: 24px;
+  border: none;
+  margin: 5px;
+  box-shadow: 0px 0px 4px 0px #01377e;
+
+}
+
+.con-map p{
+  text-align: none;
+  margin: 10px 240px 0px 0px;
+  color: #01377e;
+  font-size: 22px;
+  font-weight: 800;
+  font-family: "Edu TAS Beginner", cursive;
+  
+}
+
+
+.container {
+  width: 100%;
+  height: 77%;
+  max-width: 600px;
+  margin: 10px ;
+  padding: 40px;
+  box-shadow: 0px 0px 4px 0px #01377e;
+  border-radius: 4px;
+  font-family: "Kanit", sans-serif;
+    font-weight: 400;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-row .form-group {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.form-row .form-group:last-child {
+  margin-right: 0;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #041d2e;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 8;
+}
+
+.form-group input, .form-group textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+  border-color: #01377e;
+  box-shadow: 0 0 8px rgba(40, 167, 69, 0.1);
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #041d2e;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #215f88;
+}
+
+#name{
+  background-color: #f8fbff;
+  width: 80%;
+}
+
+#surname{
+  background-color: #f8fbff;
+  width: 80%;
+}
+
+#email {
+  width: 90%;
+  background-color: #f8fbff;
+}
+
+#message {
+resize:none;
+width: 90%;
+
+}
+
